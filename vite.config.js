@@ -4,7 +4,7 @@ import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/',
+  base: '/jumarf-fun/',
   build: {
     outDir: 'dist',
     emptyOutDir: true,

@@ -31,10 +31,16 @@ jobs:
         run: pnpm install --frozen-lockfile
       
       - name: Build
-        run: pnpm build
+        run: |
+          pnpm build
+          # Copy CNAME to dist directory
+          cp public/CNAME dist/
       
-      - name: Check build output
-        run: ls -la
+      - name: Verify build output
+        run: |
+          ls -la dist/
+          echo "CNAME content:"
+          cat dist/CNAME || echo "No CNAME found"
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
