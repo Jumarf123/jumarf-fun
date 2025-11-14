@@ -43,6 +43,15 @@
 
   <body>
     <div id="root"></div>
-    <script type="module" src="src/main.jsx"></script>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // Fallback for development
+      if (window.location.hostname === 'localhost' && !document.querySelector('script[src^="/@vite/"]')) {
+        const script = document.createElement('script');
+        script.type = 'module';
+        script.src = '/@vite/client';
+        document.head.appendChild(script);
+      }
+    </script>
   </body>
 </html>
