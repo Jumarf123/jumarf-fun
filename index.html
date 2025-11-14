@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.70" />
+  
+    <!--нахуй ты тут читаешь?-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Noto+Sans:wght@500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+  
+    <meta property="og:title" content="Jumarf">
+    <meta property="og:description" content="link in bio service | Jumarf">
+    <meta property="og:image" content="https://jumarf.fun/preview.png">
+    <meta property="og:url" content="https://jumarf.fun">
+    <meta property="og:type" content="website">
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jumarf">
+    <meta name="twitter:description" content="link in bio service | Jumarf">
+    <meta name="twitter:image" content="https://jumarf.fun/preview.png">
+  
+    <title>Jumarf</title>
+  
+    <!--ладно, читай-->
+    <script>
+      document.title = 'Jumarf';
+      function animateTitle() {
+        const title = document.title;
+        const firstChar = title[0];
+        const rest = title.slice(1);
+        document.title = firstChar === 'J' ? 'Jumarf' : 'J' + rest;
+      }
+      setInterval(animateTitle, 1000);
+    </script>
+    <script type="module" crossorigin src="/assets/main-Ca_T9-up.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-Cs1JyeBO.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script>
+      // Fallback for development
+      if (window.location.hostname === 'localhost' && !document.querySelector('script[src^="/@vite/"]')) {
+        const script = document.createElement('script');
+        script.type = 'module';
+        script.src = '/@vite/client';
+        document.head.appendChild(script);
+      }
+    </script>
+  </body>
+</html>
