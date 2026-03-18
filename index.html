@@ -1,57 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.70" />
-  
-    <!--нахуй ты тут читаешь?-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Noto+Sans:wght@500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Rubik&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
-  
-    <meta property="og:title" content="Jumarf">
-    <meta property="og:description" content="link in bio service | Jumarf">
-    <meta property="og:image" content="https://jumarf.fun/preview.png">
-    <meta property="og:url" content="https://jumarf.fun">
-    <meta property="og:type" content="website">
-  
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Jumarf">
-    <meta name="twitter:description" content="link in bio service | Jumarf">
-    <meta name="twitter:image" content="https://jumarf.fun/preview.png">
-  
-    <title>Jumarf</title>
-  
-    <!--ладно, читай-->
-    <script>
-      document.title = 'Jumarf';
-      function animateTitle() {
-        const title = document.title;
-        const firstChar = title[0];
-        const rest = title.slice(1);
-        document.title = firstChar === 'J' ? 'Jumarf' : 'J' + rest;
-      }
-      setInterval(animateTitle, 1000);
-    </script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jumarf - Utilities and Projects</title>
+  <meta id="meta-description" name="description" content="Minimal portfolio of utilities, analysis tools, and software projects by Jumarf.">
+  <meta name="theme-color" content="#050505">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:type" content="website">
+  <meta id="meta-og-title" property="og:title" content="Jumarf - Utilities and Projects">
+  <meta id="meta-og-description" property="og:description" content="Minimal portfolio of utilities, analysis tools, and software projects by Jumarf.">
+  <meta property="og:image" content="assets/images/social-card.png">
+  <meta id="meta-og-image-alt" property="og:image:alt" content="Dark portfolio preview for Jumarf.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta id="meta-twitter-title" name="twitter:title" content="Jumarf - Utilities and Projects">
+  <meta id="meta-twitter-description" name="twitter:description" content="Minimal portfolio of utilities, analysis tools, and software projects by Jumarf.">
+  <meta name="twitter:image" content="assets/images/social-card.png">
+  <meta id="meta-twitter-image-alt" name="twitter:image:alt" content="Dark portfolio preview for Jumarf.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" id="skip-link">Skip to content</a>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-    <script>
-      // Fallback for development
-      if (window.location.hostname === 'localhost' && !document.querySelector('script[src^="/@vite/"]')) {
-        const script = document.createElement('script');
-        script.type = 'module';
-        script.src = '/@vite/client';
-        document.head.appendChild(script);
-      }
-    </script>
-  </body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container header-inner">
+        <nav class="site-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a id="nav-about" href="#about">About</a></li>
+            <li><a id="nav-projects" href="#projects">Projects</a></li>
+            <li><a id="nav-contacts" href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1 class="hero-title" id="hero-title">Jumarf</h1>
+            <p class="hero-subtitle" id="hero-subtitle">Deity, zovCoder, anime hero.</p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" id="hero-projects" href="#projects">Projects</a>
+              <a class="button button-secondary" id="hero-github" href="https://github.com/Jumarf123" rel="noreferrer" aria-label="Jumarf on GitHub">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container section-center">
+          <h2 class="section-title" id="about-title">About</h2>
+          <p class="section-copy" id="about-text">I build software and tools for checking.</p>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-center">
+            <h2 class="section-title" id="projects-title">My Projects</h2>
+          </div>
+
+          <div class="projects-grid" id="projects-grid">
+            <a class="project-card" href="https://github.com/Jumarf123/RSS-Files" rel="noreferrer" aria-label="Open RSS-Files on GitHub">
+              <h3 class="project-name">RSS-Files</h3>
+              <p class="project-summary">Searches for deleted files.</p>
+              <span class="project-action">Open on GitHub</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-compact" id="contacts" aria-labelledby="contacts-title">
+        <div class="container section-center">
+          <h2 class="section-title" id="contacts-title">Contacts</h2>
+
+          <div class="contact-list">
+            <a class="contact-link" href="https://github.com/Jumarf123" rel="noreferrer">GitHub</a>
+            <a class="contact-link" href="https://t.me/Jumarfik" rel="noreferrer">Telegram</a>
+            <a class="contact-link" href="https://discord.com/users/698025508365008949" rel="noreferrer">Discord</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
 </html>
