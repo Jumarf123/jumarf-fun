@@ -1,15 +1,15 @@
 (function (global) {
   const LOCALES = {
     en: {
-      metaTitle: "Jumarf - Utilities and Projects",
-      metaDescription: "Minimal portfolio of utilities, analysis tools, and software projects by Jumarf.",
+      metaTitle: "Jumarf",
+      metaDescription: "software projects by jumarf",
       metaImageAlt: "Dark portfolio preview for Jumarf.",
       skipLink: "Skip to content",
       navAriaLabel: "Primary navigation",
       navAbout: "About",
       navProjects: "Projects",
       navContacts: "Contacts",
-      heroSubtitle: "Deity, zovCoder, anime hero.",
+      heroSubtitle: "- Deity, hero, zovCoder",
       heroProjects: "Projects",
       heroGitHubAriaLabel: "Jumarf on GitHub",
       aboutTitle: "About",
@@ -21,15 +21,15 @@
       projectLinkSuffix: "on GitHub"
     },
     ru: {
-      metaTitle: "Jumarf - Утилиты и проекты",
-      metaDescription: "Минималистичное портфолио утилит, инструментов анализа и программных проектов Jumarf.",
+      metaTitle: "Jumarf",
+      metaDescription: "программные проекты от jumarf",
       metaImageAlt: "Тёмный превью-слайд портфолио Jumarf.",
       skipLink: "Перейти к содержимому",
       navAriaLabel: "Основная навигация",
       navAbout: "Обо мне",
       navProjects: "Проекты",
       navContacts: "Контакты",
-      heroSubtitle: "Божество, zovCoder, аниме герой.",
+      heroSubtitle: "- Божество, герой, zovCoder",
       heroProjects: "Проекты",
       heroGitHubAriaLabel: "Jumarf на GitHub",
       aboutTitle: "Обо мне",
